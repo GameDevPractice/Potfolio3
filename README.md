@@ -29,17 +29,19 @@ SpawnActor에서 떨어질 Node
 ###### Begin Overlap
 ![image](https://github.com/user-attachments/assets/29117d82-8877-46ae-b1cb-00aad46d1f29)<br/>
 - 접촉된 충돌체에 따라 점수가 다르며, 성공한 횟수만큼 콤보 횟수가 늘어납니다. 이는 GameMode에서 관리합니다.<br/>
-<br/>
-#### Final Collision
+
+#### FinalCollision 
 ![image](https://github.com/user-attachments/assets/a272d953-84a5-4b1d-b10e-5a85a7efc41f)<br/>
 - 버튼에서 놓친 Node들을 제거하는 Actor이고, Node와 접촉하게 되면 쌓아올리던 콤보가 사라집니다.<br/>
-<br/>
+
 #### Spawn Node
 - Node를 생성하는 Actor 입니다.<br/>
 - DataTable를 통해 Node를 생성할 시간, 노래, 스폰할 위치를 저장하고 이를 이용해 스폰합니다.<br/>
+
 ![image](https://github.com/user-attachments/assets/6efb4522-d099-47ac-9880-0e5b415fcd0b) <br/>
 - DataTable의 정보들을 저장합니다.<br/>
 <br/>
+
 ![image](https://github.com/user-attachments/assets/64eadb0d-9672-4208-b7ce-dcb7ebf792de)<br/>
 - 저장된 정보에서 저장된 노래가 없음 게임이 종료가되고, 노래의 재생이 끝이 나도 종료가 됩니다.<br/>
 - 노래가 있다면, SetTimer를 사용하여 저장된 Node들을 스폰합니다.<br/>
