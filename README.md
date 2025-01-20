@@ -66,4 +66,6 @@ SpawnActor에서 떨어질 Node
 ![image](https://github.com/user-attachments/assets/2e7c0802-0007-4d5d-aea8-7d4332760cb0)<br/>
 - 월드의 시간을 저장하고 Bool 변수 Play를 통해 후술할 UI(WB_Main)에서 정한 노래를 재생하게 합니다.<br/>
 
+### HUD
+
 
