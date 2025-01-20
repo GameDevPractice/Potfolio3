@@ -50,5 +50,20 @@ SpawnActor에서 떨어질 Node
 - 점수와 콤보에 관련된 함수들을 관리합니다.<br>
 - 게임이 종료 시 UI인 Finish를 생성합니다.<br/>
 
+### LevelBluePrint
+![image](https://github.com/user-attachments/assets/f93f3c5b-b5ed-4462-afe7-20c4c7236ad6)<br/>
+- 게임을 진행하는 맵의 Blueprint이며, 버튼을 비 . 활성화 시킬 수 있는 Blueprint 입니다.<br/>
+- 시작 시 점수와 콤보를 표시해 줄 UI를 생성한다.<br/>
+
+###### Buttons
+![image](https://github.com/user-attachments/assets/433b37de-33de-4b20-840c-008273ea2f37)<br/>
+![image](https://github.com/user-attachments/assets/9fe0ecac-7604-4b3a-b809-6f1a9fc66f9e)<br/>
+- Custom Event를 통해 해당 버튼을 활성화 혹은 비활성화 시키게 합니다.<br/>
+- 여기에 Time이란 변수는 월드에서 흐르는 시간을 의미하고 BtnTime은 버튼을 누른 시간을 말합니다.<br/>
+- 이 두 변수를 사용하여 제작 모드일 시 Node를 생성 해야 할 시기를 정할 수 있습니다.<br/>
+
+###### Tick
+![image](https://github.com/user-attachments/assets/2e7c0802-0007-4d5d-aea8-7d4332760cb0)<br/>
+- 월드의 시간을 저장하고 Bool 변수 Play를 통해 후술할 UI(WB_Main)에서 정한 노래를 재생하게 합니다.<br/>
 
 
