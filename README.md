@@ -67,5 +67,29 @@ SpawnActor에서 떨어질 Node
 - 월드의 시간을 저장하고 Bool 변수 Play를 통해 후술할 UI(WB_Main)에서 정한 노래를 재생하게 합니다.<br/>
 
 ### HUD
+#### WB_MainScroll
+![image](https://github.com/user-attachments/assets/95b1d555-c7d0-41d8-b832-e09d77d55b1f)
+- 메인 화면에 들어갈 Scroll Box 이며, 버튼을 누를 시 맞는 노래가 재생이 되고 배경이 바뀝니다.<br/>
+
+###### Construct
+![image](https://github.com/user-attachments/assets/2772fcca-bb30-493a-b076-f78d7220ee6e)<br/>
+- 위젯 생성 시 받는 변수로 Title(Text),Data(DataTable),Index(Index),Image(Texture 2D)가 있으며,<br/>
+Title을 곡 제목을, Data는 노래가 저장되어 있는 DataTable을 사용하여 재생할 노래에, Image는 배경을, Index는 버튼에 맞는 번호로 들어가게 됩니다.<br/>
+
+###### Pressed(Button)
+![image](https://github.com/user-attachments/assets/442a65c0-a16b-4f91-a25e-6b3c9351cc42)<br/>
+![image](https://github.com/user-attachments/assets/ed078c98-c3d6-4d39-95d8-a36e1e5e8ac5)<br/>
+
+- 버튼에 맞는 노래가 재생되고 있지 않다면, 생성 시 저장된 노래를 재생하게 합니다.
+- 연속으로 누를 가능성이 있어 DoOnce를 통해 1번만 하게끔 강제합니다.
+- 노래가 재생되고 있다면, 노래를 중지 시키며, DoOnce의 Reset 기능을 사용합니다.
+- 이때 저장된 노래는 AudioComponent를 사용하여 재생됩니다.
+- MainWidget의 Index와 배경을 변경합니다.
+
+###### Tick
+![image](https://github.com/user-attachments/assets/34ff9f5e-68db-43ad-a124-ac36942acb27)<br/>
+
+- 각각 다른 버튼을 누를 경우 노래가 중복으로 재생이 되어 MainWIdget의 Index와 해당 버튼의 Index을 값을 상시 검사를 하여 막았습니다.
+
 
 
