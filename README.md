@@ -98,18 +98,43 @@ Title을 곡 제목을, Data는 노래가 저장되어 있는 DataTable을 사�
 ![image](https://github.com/user-attachments/assets/fe0495f6-9bf0-41d4-a4ee-ee7d4d2b6915)<br/>
 - 메인 화면이며, Play버튼을 누르면 게임이 시작되게 만들었습니다.
 
-####### Construct
+###### Construct
 ![image](https://github.com/user-attachments/assets/a7534f94-9fda-40b5-b494-bbd44143e69c)<br/>
 - 여기에 있는 변수 Data는 위에서 설명한 데이터테이블이 아닌 데이터테이블을 담은 데이터테이블 변수입니다.
 - 이 변수를 WB_MainScroll을 생성할 때 전달하여 각자 맞는 노래와 배경, 제목을 지정할 수 있습니다.
 - 제작모드와 플레이모드를 지정 할 수 있게 월드에 있는 버튼들을 가져와 저장합니다.
 
-####### OnPressed(PlayBtn)
+###### OnPressed(PlayBtn)
 ![image](https://github.com/user-attachments/assets/779866f5-afb9-476a-8ab4-13f910fdd498)<br/>
 - 게임이 시작되는 버튼입니다.
 - 게임에 집중할 수 있게 세팅을 합니다.
 
-####### OnPressed(MakeBtn)
+###### OnPressed(MakeBtn)
 ![image](https://github.com/user-attachments/assets/ab2f0e39-b54f-41e4-82d3-1eada7cd64c6)<br/>
 - 제작모드가 되는 버튼입니다.
+
+#### WB_Score
+![image](https://github.com/user-attachments/assets/bfb057a8-b31a-49c5-9024-765e222c9e3d)<br/>
+- 플레이 도중 쌓은 점수를 볼 수 있게 해주는 위젯입니다.
+
+###### Construct
+![image](https://github.com/user-attachments/assets/f22d6c8e-96d3-4d07-909e-3047dfc70022)<br/>
+- 게임플레이를 저장합니다.
+
+###### Tick
+![image](https://github.com/user-attachments/assets/f1545003-fd6f-4460-94cc-e65a5b13dc84)<br/>
+- Tick을 통해 점수와 콤보를 표시하도록 했습니다.
+- 콤보가 5이상일 시 에만 표시되도록 했습니다.
+
+#### WB_Finsish
+![image](https://github.com/user-attachments/assets/71c49ae1-e72f-4040-bade-4d00c581fc84)<br/>
+- 게임이 끝날 경우 나오는 위젯입니다.
+  
+###### Construct
+![image](https://github.com/user-attachments/assets/03df280f-3432-4292-b88b-717d59c4fb0a)<br/>
+- 최종 점수를 표시하고 엔딩 곡이 나오도록 하였습니다.
+
+###### Buttons
+![image](https://github.com/user-attachments/assets/efe83634-8db9-4f33-971f-02722d2c2700)<br/>
+- 각 버튼에 맞는 기능들을 하게 하였습니다.
 
