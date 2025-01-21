@@ -154,7 +154,7 @@ Title을 곡 제목을, Data는 노래가 저장되어 있는 DataTable을 사�
 
 #### Music
 ![image](https://github.com/user-attachments/assets/bd3fe3fd-fbb6-487e-a288-74c3bc635741)<br/>
-- 위의 데이터테이블을 관리할 구조체
+
 ##### MusciData
 ![image](https://github.com/user-attachments/assets/bb409c1e-fdae-484f-a0ec-9c8b195f47e7)<br/>
 - NodeData들을 받아 관리하는 데이터테이블입니다.
