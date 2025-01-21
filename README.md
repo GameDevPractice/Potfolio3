@@ -138,3 +138,25 @@ Title을 곡 제목을, Data는 노래가 저장되어 있는 DataTable을 사�
 ![image](https://github.com/user-attachments/assets/efe83634-8db9-4f33-971f-02722d2c2700)<br/>
 - 각 버튼에 맞는 기능들을 하게 하였습니다.
 
+### 데이터
+#### Nodes
+![image](https://github.com/user-attachments/assets/08ab81bd-c921-44a4-90dc-53a5285a899f)<br/>
+- Node 및 노래 데이터테이블의 행이 될 구조체
+- 이 구조체를 사용하여 Node 스폰 위치, 시간, 노래를 관리했습니다.
+#### NodeDatas
+##### FirstNodeData
+![image](https://github.com/user-attachments/assets/4bd4c13e-5476-4760-af78-fc59874f1e02)<br/>
+##### SecondNodeData
+![image](https://github.com/user-attachments/assets/73c70dd8-ba53-487a-a39a-2962973ca279)<br/>
+##### ThirdNodeData
+![image](https://github.com/user-attachments/assets/4cf8d3b6-71bb-42bd-a104-b30e376fd7c3)<br/>
+- 위의 3개의 데이터테이블들은 위의 구조체를 사용하여 만들었습니다
+
+#### Music
+![image](https://github.com/user-attachments/assets/bd3fe3fd-fbb6-487e-a288-74c3bc635741)<br/>
+- 위의 데이터테이블을 관리할 구조체
+##### MusciData
+![image](https://github.com/user-attachments/assets/bb409c1e-fdae-484f-a0ec-9c8b195f47e7)<br/>
+- NodeData들을 받아 관리하는 데이터테이블입니다.
+- WB_MainWidget에서 사용되며, WB_MainScroll에 정보를 보냅니다.
+
